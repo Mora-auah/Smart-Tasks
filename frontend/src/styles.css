@@ -6,7 +6,9 @@
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; margin: 0; }
 body { background: var(--bg); color: var(--text); min-width: 1280px; }
-.app { display: flex; height: 100%; }
+.shell { display: flex; flex-direction: column; height: 100%; }
+.banner { flex: none; background: #fff3d4; color: #8f6200; border-bottom: 1px solid #ecd28a; padding: 6px 32px; text-align: center; font-size: 13px; font-weight: 500; }
+.app { display: flex; flex: 1; min-height: 0; }
 .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .chat { width: 380px; flex: none; background: var(--surface); border-inline-start: 1px solid var(--border); display: flex; flex-direction: column; }
 .chat-head { padding: 14px 18px; border-bottom: 1px solid var(--border); font-weight: 700; }

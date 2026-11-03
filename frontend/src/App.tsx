@@ -15,7 +15,11 @@ const NAV = [
 // The chat panel sits outside <Routes>, so the conversation survives page changes.
 export default function App() {
   return (
-    <div className="app">
+    <div className="shell">
+      <div className="banner" role="status">
+        גרסת הרצה – המערכת בשלבי הרצה, ייתכנו תקלות ושינויים.
+      </div>
+      <div className="app">
       <div className="main">
         <header className="top">
           <div className="brand">Foo Tasks</div>
@@ -37,6 +41,7 @@ export default function App() {
         </main>
       </div>
       <ChatPanel />
+      </div>
     </div>
   );
 }
